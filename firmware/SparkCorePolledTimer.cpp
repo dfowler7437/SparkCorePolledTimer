@@ -1,5 +1,5 @@
 //Check header file for detials on use...
-#include "application.h"
+//#include "application.h"
 #include "SparkCorePolledTimer.h"
 
 SparkCorePolledTimer::SparkCorePolledTimer(unsigned long timeoutMS){

@@ -31,6 +31,7 @@
 //  **************************************************************
 #ifndef SparkCorePolledTimer_h
 #define SparkCorePolledTimer_h
+#include "application.h"
 
 #define TIMECTL_INIT      0
 
