@@ -1,3 +1,5 @@
+#ifndef SparkCorePolledTimer_h
+#define SparkCorePolledTimer_h
 //  **************************************************************
 //  SparkCorePolledTimer.h
 //  Simple Timer Library for the Spark Core. Lets you do time based events.
@@ -29,8 +31,7 @@
 //     //do your time based stuff here...
 //  }
 //  **************************************************************
-#ifndef SparkCorePolledTimer_h
-#define SparkCorePolledTimer_h
+#include "application.h"
 
 #define TIMECTL_INIT      0
 
