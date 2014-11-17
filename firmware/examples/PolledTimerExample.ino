@@ -1,6 +1,7 @@
-#include "PolledTimer.h"
+// This #include statement was automatically added by the Spark IDE.
+#include "SparkCorePolledTimer.h"
 
-PolledTimer updateTimer(1000);  //Create a timer object and set it's timeout in milliseconds
+SparkCorePolledTimer updateTimer(1000);  //Create a timer object and set it's timeout in milliseconds
 void OnTimer(void);   //Prototype for timer callback method
 
 void setup() {
