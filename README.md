@@ -1,9 +1,9 @@
 SparkCorePolledTimer
 ====================
 Simple Timer Library for the Spark Core. Lets you do time based events.
-This library is open and should work for the Arduino as well.
-I only ask that you let me know of any improvements and that you drop me
-and emial about your project. I may link back to it from my blog...
+This library is open I only ask that you let me know of any improvements 
+and that you drop me an emial about your project. I may link back to it 
+from my blog...
 David Fowler AKA uCHobby - david.fowler@gmail.com - http://www.uchobby.com
 
 Eample Usage

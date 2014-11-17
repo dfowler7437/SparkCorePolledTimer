@@ -1,20 +1,20 @@
-#include "PolledTimer.h"
+#include "SparkCorePolledTimer.h"
 
-PolledTimer::PolledTimer(unsigned long timeoutMS){
+SparkCorePolledTimer::SparkCorePolledTimer(unsigned long timeoutMS){
     Reset();
     SetTimeout(timeoutMS);
     callback=NULL;
 }
 
-void PolledTimer::SetTimeout(unsigned long timeoutMS){
+void SparkCorePolledTimer::SetTimeout(unsigned long timeoutMS){
     intervalMS=timeoutMS;
 }
 
-void PolledTimer::Reset(void){
+void SparkCorePolledTimer::Reset(void){
     timeMark=millis();
 }
 
-int PolledTimer::HasElapsed(){
+int SparkCorePolledTimer::HasElapsed(){
     unsigned long timeCurrent;
     unsigned long timeElapsed;
     int result=false;
@@ -30,7 +30,7 @@ int PolledTimer::HasElapsed(){
     return(result);  
 }
 
-void PolledTimer::Update(void){
+void SparkCorePolledTimer::Update(void){
     if (callback!=NULL) {
         if(HasElapsed()) {
             callback();
@@ -38,7 +38,7 @@ void PolledTimer::Update(void){
     }
 }
 
-void PolledTimer::SetCallback(void (*callbackFunction)(void)){
+void SparkCorePolledTimer::SetCallback(void (*callbackFunction)(void)){
     callback=callbackFunction;
 }
 
